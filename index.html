@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Autor de la página -->
+    <meta name="author" content="donovansaez@liceovvh.cl, krishnalopez@liceovvh.cl">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Título de la página -->
+    <title>Templo de los juegos</title>
+</head>
+
+<body class="bg-dark">
+    <!-- "bg-primary" cambia el color del fondo a azul, "p-2" añade un padding de 2 -->
+    <header class="bg-primary p-2">
+        <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+        <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
+        <!-- "align-items-center" alinea los items verticalmente al centro, "col-6" define que el objeto use 6 columnas -->
+        <!-- "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <div class="container-fluid d-flex justify-content-between align-items-center col-6 mx-auto">
+            <!-- " img-small" hace la imagen pequeña -->
+            <img src="https://cdn-icons-png.flaticon.com/256/5234/5234710.png" alt="Templo" class="img-small">
+            <!-- "text-center" alinea al centro el texto, "text-light" cambia el color del texto a blanco -->
+            <!-- "mx-4" añade un margen horizontal de 1 -->
+            <h1 class="text-center text-light mx-1">Templo de los juegos</h1>
+            <!-- "img-small" hace la imagen pequeña -->
+            <img src="https://cdn-icons-png.flaticon.com/256/5234/5234710.png" alt="Templo" class="img-small">
+        </div>
+    </header>
+    <!-- "navbar" identifica al elemento como una barra de navegación -->
+    <!-- "navbar-expand-lg" define cuando la barra pasa de botón hamburguesa a diseño completo horizontalmente -->
+    <!-- "bg-info" cambia el color a celeste -->
+    <nav class="navbar navbar-expand-lg bg-info">
+        <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
+        <!-- "col-6" hace que el elemento ocupe 6 columnas, "mx-auto" da un margen horizontal automático para centrar el elemento -->
+        <div class="container-fluid col-6 mx-auto">
+            <!-- "navbar-toggler" crea y estiliza el botón de hamburguesa -->
+            <!-- "mx-auto" da un margen horizontal automático para centrar el elemento -->
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- "navbar-toggler-icon" pone el ícono del botón hamburguesa -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- "collapse" oculta el contenido para que solo sea visible pulsando un botón -->
+            <!-- "navbar-collapse" une el sistema de colapso con el estilo visual de la barra de navegación -->
+            <!-- "navbarSupportedContent" ayuda a identificar el contenido que debe mostrar el botón hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- "navbar-nav" define la estructura y espaciado de los enlaces de la barra de navegación -->
+                <!-- "me-auto" es un margen que empuja los elementos y crea espacios de forma automática -->
+                <!-- "mb-2" añade un margen inferior de 2, "mb-lg-0" cuando la pantalla es grande el margen inferior será de 0 -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <!-- <dr> hace que el texto esté en negrita -->
+                        <a class="nav-link active" aria-current="page" href="/index.html">
+                            <dt>Inicio</dt>
+                        </a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <li class="nav-item">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <a class="nav-link" href="#">Top jugados</a>
+                    </li>
+                    <!-- "nav-item" define el elemento como un objeto de la barra de navegación -->
+                    <!-- "dropdown" se encarga de crear un menú despegable -->
+                    <li class="nav-item dropdown">
+                        <!-- "nav-link" da el estilo visual final de los enlaces de la barra de navegación -->
+                        <!-- "dropdown-toggle" convierte el elemento en el ejecutador del menú desplegable -->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorías
+                        </a>
+                        <!-- "dropdown-menu" guarda la lista de items del menú desplegable -->
+                        <ul class="dropdown-menu">
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Deportes</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Football</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Combate</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Multijugador</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">RPG</a></li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Simulador</a></li>
+                            <li>
+                                <!-- "dropdown-divider" añade una línea divisora -->
+                                <hr class="dropdown-divider">
+                            </li>
+                            <!-- "dropdown-item" determina el objeto como un item de la lista desplegable -->
+                            <li><a class="dropdown-item" href="#">Ver más...</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- "d-flex" hace los elementos hijos flexibles -->
+                <!-- role="search" determina que el rol de formulario es ser una búsqueda -->
+                <form class="d-flex" role="search">
+                    <!--  -->
+                    <input class="form-control me-2" type="search" placeholder="Buscar juego..." aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
