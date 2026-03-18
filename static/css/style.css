@@ -1,4 +1,10 @@
 /* Selecciona los elementos de clase "img-small" */
-.img-small {
-    max-width: 3rem; /* Rem: el tamaño de letra del elemento raíz */
+.img-small { /* Rem: el tamaño de letra del elemento raíz */
+    max-width: 3rem; /* Establece el ancho máximo en 3 veces el tamaño de la letra del elemento raíz */
+}
+
+/* Selecciona los elementos de clase "carousel-inner" */
+.carousel-inner {
+    max-width: 686px; /* Establece el ancho máximo en 696 pixeles */
+    cursor: pointer; /* Cambia la imagen del cursor al dedo apuntando */
 }
