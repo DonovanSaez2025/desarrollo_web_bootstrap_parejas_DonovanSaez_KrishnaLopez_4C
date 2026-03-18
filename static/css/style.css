@@ -3,8 +3,22 @@
     max-width: 3rem; /* Establece el ancho máximo en 3 veces el tamaño de la letra del elemento raíz */
 }
 
-/* Selecciona los elementos de clase "carousel-inner" */
-.carousel-inner {
-    max-width: 686px; /* Establece el ancho máximo en 696 pixeles */
+/* Selecciona los elementos de clase "img-medium" */
+.img-medium-sm {
+    max-width: 8rem; /* Establece el ancho máximo en 8 veces el tamaño de la letra del elemento raíz */
+}
+
+/* Selecciona los elementos de clase "selected-game" */
+.selected-game {
     cursor: pointer; /* Cambia la imagen del cursor al dedo apuntando */
+}
+
+/* Selecciona los elementos de clase "img-zoom" */
+.img-zoom {
+  transition: transform .3s ease; /* Añade una transición al zoom de la imagen*/
+}
+
+/* Selecciona los elementos de clase "img-zoom" al pasar el cursor encima */
+.img-zoom:hover {
+  transform: scale(1.1); /* Transforma la escala en un 1.1 */ 
 }
