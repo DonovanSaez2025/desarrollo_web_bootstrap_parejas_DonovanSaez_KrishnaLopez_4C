@@ -40,10 +40,10 @@ body {
 
 /* Selecciona los elementos de clase "footer-container" */
 .footer-container {
-  flex: 1 0 auto; /* El contenido empuja al footer hacia abajo */
+  flex: 1 0 auto; /* Hace que el container empuje el footer hacia abajo */
 }
 
 /* Selecciona el footer de la página */
 footer {
-  flex-shrink: 0; /* El footer no se encoge */
+  flex-shrink: 0; /* Hace que el footer no se encoja */
 }
