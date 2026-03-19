@@ -87,7 +87,7 @@
                 <!-- role="search" determina que el rol de formulario es ser una búsqueda -->
                 <form class="d-flex" role="search">
                     <!-- "btn" identifica el elemento como un botón, "btn-success" cambia el color del botón a verde -->
-                    <button class="btn btn-danger" type="submit" onclick="cerrarSesion()">Cerrar sesión</button>
+                    <button class="btn btn-success" id="boton-sesion" type="submit" onclick="iniciarSesion()">Iniciar sesión</button>
                 </form>
             </div>
         </div>
@@ -95,7 +95,7 @@
     <!-- "navbar" identifica al elemento como una barra de navegación -->
     <!-- "navbar-expand-lg" define cuando la barra pasa de botón hamburguesa a diseño completo horizontalmente -->
     <!-- "bg-info" cambia el color a celeste -->
-    <nav class="navbar navbar-expand-lg bg-info">
+    <nav class="navbar navbar-expand-lg bg-warning">
         <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
         <!-- "col-lg-8" hace que el elemento ocupe 8 columnas en pantallas grandes, "mx-auto" da un margen horizontal automático para centrar el elemento -->
         <div class="container-fluid col-lg-8 mx-auto">
