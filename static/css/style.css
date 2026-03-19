@@ -1,5 +1,5 @@
 /* Selecciona los elementos de clase "img-small" */
-.img-small { /* Rem: el tamaño de letra del elemento raíz */
+.img-small { /*  Rem: el tamaño de letra del elemento raíz */
     max-width: 3rem; /* Establece el ancho máximo en 3 veces el tamaño de la letra del elemento raíz */
 }
 
@@ -23,6 +23,27 @@
   transform: scale(1.1); /* Transforma la escala en un 1.1 */ 
 }
 
+/* Selecciona al elemento de ID (username) */
 #username {
-  font-weight: bold;
+  font-weight: bold; /* Hace que la letra esté en negrita */
+}
+
+/* Selecciona el documento HMTL */
+html {
+  height: 100%; /* Hace que la altura sea del 100% */
+}
+
+/* Selecciona el body de la página */
+body {
+  min-height: 100%; /* Hace que la altura mínima sea del 100% */
+}
+
+/* Selecciona los elementos de clase "footer-container" */
+.footer-container {
+  flex: 1 0 auto; /* El contenido empuja al footer hacia abajo */
+}
+
+/* Selecciona el footer de la página */
+footer {
+  flex-shrink: 0; /* El footer no se encoge */
 }

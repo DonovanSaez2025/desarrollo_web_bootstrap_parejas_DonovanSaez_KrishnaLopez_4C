@@ -4,6 +4,9 @@ const usernameSpan = document.getElementById("username");
 const botonSesion = document.getElementById("boton-sesion");
 
 document.addEventListener('DOMContentLoaded', () => {
+    if (username == "") {
+        iniciarSesion();
+    };
     usernameSpan.textContent = username;
 });
 

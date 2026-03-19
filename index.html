@@ -17,7 +17,7 @@
     <title>Templo de los juegos</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark d-flex flex-column">
     <!-- "bg-primary" cambia el color del fondo a azul, "p-2" añade un padding de 2 -->
     <header class="bg-primary p-2">
         <!-- "container-fluid" hace que el contenedor use el 100% de la pantalla disponible -->
@@ -86,8 +86,9 @@
                 <!-- "d-flex" hace los elementos hijos flexibles -->
                 <!-- role="search" determina que el rol de formulario es ser una búsqueda -->
                 <form class="d-flex" role="search">
-                    <!-- "btn" identifica el elemento como un botón, "btn-success" cambia el color del botón a verde -->
-                    <button class="btn btn-success" id="boton-sesion" type="submit" onclick="iniciarSesion()">Iniciar sesión</button>
+                    <!-- "btn" identifica el elemento como un botón, "btn-danger" cambia el color del botón a rojo -->
+                    <button class="btn btn-danger" id="boton-sesion" type="submit" onclick="cerrarSesion()">Cerrar
+                        sesión</button>
                 </form>
             </div>
         </div>
@@ -176,12 +177,16 @@
     <!-- "col-lg-8" hace que ocupe 8 columnas en pantallas grandes -->
     <!-- "mx-0" hace que el margin horizontal sea 0, se usa main porque es el contenedor principal de la página  -->
     <main class="container-fluid col-lg-8 mx-auto">
-        <!-- "text-center" alinea al centro el texto, "text-light" cambia el color del texto a blanco -->
-        <!-- "my-2" añade un margen vertical de 2 -->
-        <h2 class="text-light text-center my-2">Recomendaciones principales</h2>
+        <!-- "row" establece el elemento como una fila -->
+        <div class="row">
+            <!-- "text-center" alinea al centro el texto, "text-light" cambia el color del texto a blanco -->
+            <!-- "my-2" añade un margen vertical de 2 -->
+            <h2 class="text-light text-center my-2">Recomendaciones principales</h2>
+        </div>
         <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
         <!-- "col-lg-8" define que el objeto use 8 columnas en pantallas grandes, "mx-auto" da un margen horizontal automático para centrar el elemento -->
-        <div class="d-flex justify-content-center col-lg-8 mx-auto">
+        <!-- "row" establece el elemento como una fila -->
+        <div class="row d-flex justify-content-center col-lg-8 mx-auto">
             <!-- "carousel" detecta al elemento como un carrusel, "slide" hace que el carrusel sea deslizable -->
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <!-- "carousel-inner" detecta que es el elemento base para las imagenes -->
@@ -379,8 +384,38 @@
                     </div>
                 </div>
             </section>
+            <!-- "d-flex" hace que los elementos hijos sean flexibles, "justify-content-center" alinea el contenido horizontalmente al centro -->
+            <div class="d-flex justify-content-center">
+                <!-- "btn" detecta el elemento como un botón, "btn-lg" lo hace un botón grande -->
+                <!-- "bg-primary" cambia el color del fondo a azul, "mt-4" añade un margen arriba de 4 -->
+                <!-- "text-lignt" cambia el botón del texto a blanco -->
+                <button class="btn btn-lg bg-primary mt-4 text-light" type="button">Ver más</button>
+            </div>
         </div>
     </main>
+
+    <!-- "bg-secondary" cambia el color del fondo a gris, "mt-5" añade un margen arriba de 5 -->
+    <footer class="bg-secondary mt-5">
+        <!-- (No de Bootstrap) "footer-container" detecta el elemento como el contenedor del footer -->
+        <!-- "mt-3" añade un margen arriba de 3 -->
+        <div class="footer-container mt-3 col-lg-6 mx-auto">
+            <div>
+                <!-- "text-center" alinea el texto al centro, "text-light" cambia el color del texto a blanco -->
+                <p class="text-center text-light">© 2026 by DonAndri United Love Games Inc. Todos los derechos
+                    reservados, al iniciar sesión, usted acepta automáticamente los términos y condiciones, y
+                    nuestra política de privacidad.</p>
+            </div>
+            <!-- "row" establece el elemento como una fila, "justify-content-between" alinea horizontalmente los elementos con espacios intermedios -->
+            <div class="d-flex justify-content-between">
+                <a href="#"
+                    class="link-opacity-75 link-opacity-100-hover link-underline link-underline-opacity-0 link-info">
+                    Términos y condiciones</a>
+                <a href="#"
+                    class="link-opacity-75 link-opacity-100-hover link-underline link-underline-opacity-0 link-info">
+                    Política de privacidad</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
