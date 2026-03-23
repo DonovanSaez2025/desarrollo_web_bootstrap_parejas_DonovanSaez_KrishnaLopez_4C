@@ -40,5 +40,6 @@ function iniciarSesion() {
         botonSesion.classList.add("btn-danger"); // Añade la clase btn-danger del botón de sesión
         botonSesion.textContent = "Cerrar  sesión"; // Cambia el texto del botón a "Cerrar sesión"
         usernameSpan.textContent = username; // Establece el contenido del span con el nombre de usuario
+        botonSesion.onclick = cerrarSesion; // Cambia la función dentro del "onclick" a iniciarSesion
     };
 };
